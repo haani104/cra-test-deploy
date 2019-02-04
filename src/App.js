@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import history from './history';
 
+console.log(history);
 function BasicExample() {
   return (
-    <Router>
+    <Router history={history}>
         <div>
           <ul>
             <li>
