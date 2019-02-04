@@ -1,21 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import history from './history';
+//import history from './history';
 
-console.log(history);
+
 function BasicExample() {
   return (
-    <Router history={history}>
+    // <Router history={history}>
+      <Router basename="/imt-fe">
         <div>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <Link to="/topics">Topics</Link>
+              <Link to="topics">Topics</Link>
             </li>
           </ul>
 
